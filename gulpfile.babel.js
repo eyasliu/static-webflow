@@ -96,7 +96,8 @@ gulp.task('lint', () => {
     .src([
       './*.js',
       'app/**/*.js',
-      'config/*.js'
+      'config/*.js',
+      'app/**/*.vue'
     ])
     .pipe(eslint())
     .pipe(eslint.formatEach())

@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
+import env from './env';
 
 export default {
   resolve: {
@@ -13,7 +14,7 @@ export default {
     path: path.join(__dirname, '../build/client'),
     filename: '[name].js',
     chunkFilename: '[name].[chunkhash:5].chunk.js',
-    publicPath: '/assets/'
+    publicPath: `http://localhost:${env.clientPort}/assets/`
   },
   module: {
     noParse: [],
@@ -48,9 +49,11 @@ export default {
       }
     ]
   },
-  postcss: () => [
-    require('precss')
-  ],
+  vue: {
+    postcss: [
+      require('precss')
+    ]
+  },
   plugins: [
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({

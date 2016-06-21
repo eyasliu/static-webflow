@@ -2,7 +2,7 @@
   "parser": "babel-eslint",
   // https://github.com/babel/babel-eslint
   "plugins": [
-    // "react"
+    "html"
     // https://github.com/yannickcr/eslint-plugin-react
   ],
   "globals": {
@@ -159,7 +159,7 @@
     // http://eslint.org/docs/rules/no-multi-str
     "no-native-reassign": 2,
     // http://eslint.org/docs/rules/no-native-reassign
-    "no-new": 2,
+    // "no-new": 2,
     // http://eslint.org/docs/rules/no-new
     "no-new-func": 2,
     // http://eslint.org/docs/rules/no-new-func
@@ -239,7 +239,7 @@
     ],
     // http://eslint.org/docs/rules/comma-style
     // "eol-last": 2,                   // http://eslint.org/docs/rules/eol-last
-    "func-names": 1,
+    // "func-names": 1,
     // http://eslint.org/docs/rules/func-names
     "key-spacing": [
       2,
